@@ -7,95 +7,83 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Menú de Burger Shot</h1>
-    <p>¡Bienvenidos a la mejor experiencia de hamburguesas!</p>
+    <!-- Sección del logo -->
+    <header>
+        <div class="logo-container">
+            <img src="imagenes/logo_burgershot.png" alt="Logo Burger Shot" class="logo">
+        </div>
+    </header>
 
-    <div class="menu-section">
-        <h2>Hamburguesas Clásicas</h2>
-        <div class="item">
-            <img src="imagenes/burger_shot_original.jpg" alt="Burger Shot Original">
-            <span class="item-name">Burger Shot Original</span>
-            <span class="item-price">$8.50</span>
-        </div>
-        <div class="description">Carne jugosa, lechuga, tomate, queso cheddar y nuestra salsa especial.</div>
+    <!-- Título del menú -->
+    <h1>Nuestro Menú</h1>
 
-        <div class="item">
-            <img src="imagenes/double_shot.jpg" alt="Double Shot">
-            <span class="item-name">Double Shot</span>
-            <span class="item-price">$11.00</span>
+    <!-- Sección de categorías/productos en tarjetas -->
+    <div class="menu-container">
+        <!-- Tarjeta 1: Novedades -->
+        <div class="menu-card">
+            <img src="imagenes/novedades_burger.jpg" alt="Novedades Burger Shot">
+            <h3>Novedades</h3>
+            <p>Descubre nuestras nuevas creaciones jugosas y deliciosas.</p>
+            <ul>
+                <li>Mega Shot Especial - $13.50</li>
+                <li>Burger Crujiente - $10.00</li>
+            </ul>
         </div>
-        <div class="description">Doble carne, doble queso, cebolla caramelizada y pepinillos.</div>
 
-        <div class="item">
-            <span class="item-name">Chicken Shot</span>
-            <span class="item-price">$7.80</span>
+        <!-- Tarjeta 2: Menú Parrilla -->
+        <div class="menu-card">
+            <img src="imagenes/parrilla_burger.jpg" alt="Menú Parrilla Burger Shot">
+            <h3>Menú Parrilla</h3>
+            <p>Hamburguesas a la parrilla con sabor único.</p>
+            <ul>
+                <li>Burger Shot Original - $8.50</li>
+                <li>Double Shot - $11.00</li>
+            </ul>
         </div>
-        <div class="description">Pollo crujiente, mayonesa picante, lechuga y tomate.</div>
-    </div>
 
-    <div class="menu-section">
-        <h2>Especialidades de la Casa</h2>
-        <div class="item">
-            <img src="imagenes/mega_shot.jpg" alt="Mega Shot">
-            <span class="item-name">Mega Shot</span>
-            <span class="item-price">$13.50</span>
+        <!-- Tarjeta 3: Menú Pollo -->
+        <div class="menu-card">
+            <img src="imagenes/pollo_burger.jpg" alt="Menú Pollo Burger Shot">
+            <h3>Menú Pollo</h3>
+            <p>Opciones crujientes y sabrosas de pollo.</p>
+            <ul>
+                <li>Chicken Shot - $7.80</li>
+                <li>Pollo Picante - $9.00</li>
+            </ul>
         </div>
-        <div class="description">Triple carne, bacon, queso suizo, aros de cebolla y salsa BBQ.</div>
 
-        <div class="item">
-            <span class="item-name">Veggie Shot</span>
-            <span class="item-price">$9.00</span>
+        <!-- Tarjeta 4: Acompañamientos -->
+        <div class="menu-card">
+            <img src="imagenes/acompannamientos.jpg" alt="Acompañamientos Burger Shot">
+            <h3>Acompañamientos</h3>
+            <p>Perfectos para complementar tu comida.</p>
+            <ul>
+                <li>Papas Fritas - $3.50</li>
+                <li>Aros de Cebolla - $4.20</li>
+            </ul>
         </div>
-        <div class="description">Hamburguesa vegetariana con aguacate, rúcula y alioli de ajo.</div>
-    </div>
 
-    <div class="menu-section">
-        <h2>Acompañamientos</h2>
-        <div class="item">
-            <img src="imagenes/papas_fritas.jpg" alt="Papas Fritas">
-            <span class="item-name">Papas Fritas Clásicas</span>
-            <span class="item-price">$3.50</span>
+        <!-- Tarjeta 5: Bebidas -->
+        <div class="menu-card">
+            <img src="imagenes/bebidas.jpg" alt="Bebidas Burger Shot">
+            <h3>Bebidas</h3>
+            <p>Refresca tu experiencia con nuestras bebidas.</p>
+            <ul>
+                <li>Refresco - $2.50</li>
+                <li>Milkshake - $4.50</li>
+            </ul>
         </div>
-        <div class="item">
-            <span class="item-name">Papas con Queso y Bacon</span>
-            <span class="item-price">$5.00</span>
-        </div>
-        <div class="item">
-            <span class="item-name">Aros de Cebolla</span>
-            <span class="item-price">$4.20</span>
-        </div>
-    </div>
 
-    <div class="menu-section">
-        <h2>Bebidas</h2>
-        <div class="item">
-            <span class="item-name">Refresco (Cola, Limón, Naranja)</span>
-            <span class="item-price">$2.50</span>
+        <!-- Tarjeta 6: Postres -->
+        <div class="menu-card">
+            <img src="imagenes/postres.jpg" alt="Postres Burger Shot">
+            <h3>Postres</h3>
+            <p>Dulces para finalizar tu comida.</p>
+            <ul>
+                <li>Brownie Shot - $3.80</li>
+                <li>Mini Donuts - $4.00</li>
+            </ul>
         </div>
-        <div class="item">
-            <span class="item-name">Milkshake (Vainilla, Chocolate, Fresa)</span>
-            <span class="item-price">$4.50</span>
-        </div>
-        <div class="item">
-            <span class="item-name">Cerveza Local</span>
-            <span class="item-price">$5.00</span>
-        </div>
-    </div>
-
-    <div class="menu-section">
-        <h2>Postres</h2>
-        <div class="item">
-            <img src="imagenes/brownie_shot.jpg" alt="Brownie Shot">
-            <span class="item-name">Brownie Shot</span>
-            <span class="item-price">$3.80</span>
-        </div>
-        <div class="description">Con helado de vainilla y salsa de chocolate.</div>
-
-        <div class="item">
-            <span class="item-name">Mini Donuts</span>
-            <span class="item-price">$4.00</span>
-        </div>
-        <div class="description">Cubiertos de azúcar y canela.</div>
     </div>
 </body>
 </html>
