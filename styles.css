@@ -129,7 +129,7 @@ header {
 
 #modal-details img {
     width: 100%;
-    max-height: 120px; /* Tamaño menor para la imagen en el modal */
+    max-height: 50px; /* Tamaño menor para la imagen en el modal */
     object-fit: cover;
     border-radius: 5px;
     margin-bottom: 15px;
