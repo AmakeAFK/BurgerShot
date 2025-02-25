@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menú de Burger Shot</title>
+    <title>Menú de Burger Shot - Bacon Love</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
@@ -18,45 +18,11 @@
     <!-- Título del menú con animación -->
     <h1 class="title">Nuestro Menú</h1>
 
-    <!-- Pestañas -->
-    <div class="tabs">
-        <button class="tab-button active" onclick="openTab('menus')">Menús</button>
-        <button class="tab-button" onclick="openTab('bebidas')">Bebidas</button>
-        <button class="tab-button" onclick="openTab('comidas')">Comidas</button>
-    </div>
-
-    <!-- Contenedores de thumbnails para cada pestaña -->
-    <div id="menus" class="tab-content active">
-        <div class="menu-thumbnails">
-            <div class="thumbnail" onclick="showDetails('baconlove')">
-                <img src="imagenes/burgerShot_baconlov.png" alt="Hamburguesa Bacon Love Burger Shot">
-            </div>
-            <!-- Añade más thumbnails para otros menús si los tienes -->
-            <div class="thumbnail" onclick="showDetails('veggieshot')">
-                <img src="imagenes/vegetariano_burger.jpg" alt="Veggie Shot Burger Shot">
-            </div>
-        </div>
-    </div>
-
-    <div id="bebidas" class="tab-content">
-        <div class="menu-thumbnails">
-            <div class="thumbnail" onclick="showDetails('refresco')">
-                <img src="imagenes/refresco.jpg" alt="Refresco Burger Shot">
-            </div>
-            <div class="thumbnail" onclick="showDetails('milkshake')">
-                <img src="imagenes/milkshake.jpg" alt="Milkshake Burger Shot">
-            </div>
-        </div>
-    </div>
-
-    <div id="comidas" class="tab-content">
-        <div class="menu-thumbnails">
-            <div class="thumbnail" onclick="showDetails('papasfritas')">
-                <img src="imagenes/papas_fritas.jpg" alt="Papas Fritas Burger Shot">
-            </div>
-            <div class="thumbnail" onclick="showDetails('aroscebolla')">
-                <img src="imagenes/aros_cebolla.jpg" alt="Aros de Cebolla Burger Shot">
-            </div>
+    <!-- Contenedor de thumbnails (tarjetas pequeñas) -->
+    <div class="menu-thumbnails">
+        <!-- Solo una tarjeta para la hamburguesa Bacon Love -->
+        <div class="thumbnail" onclick="showDetails('baconlove')">
+            <img src="imagenes/burgerShot_baconlov.png" alt="Hamburguesa Bacon Love Burger Shot">
         </div>
     </div>
 
