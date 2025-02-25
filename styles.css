@@ -43,7 +43,7 @@ header {
     justify-content: center;
     gap: 30px;
     padding: 40px;
-    background-color: rgba(255, 255, 255, 0.9); /* Fondo semi-transparente para contraste */
+    background-color: #f5e6cc; /* Fondo beige para las tarjetas, como antes */
     border-radius: 15px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
     margin: 20px auto;
@@ -59,6 +59,7 @@ header {
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border: 3px solid #d32f2f; /* Borde rojo para resaltar el estilo artístico */
+    background-color: #f5e6cc; /* Fondo beige para las thumbnails */
 }
 
 .thumbnail:hover {
@@ -91,23 +92,24 @@ header {
 }
 
 .modal-content {
-    background-color: #fff;
+    background-color: #f5e6cc; /* Fondo beige para el modal, como antes */
     margin: 10% auto;
-    padding: 30px;
-    border-radius: 20px;
+    padding: 20px;
+    border-radius: 15px;
     width: 90%;
-    max-width: 600px;
+    max-width: 400px; /* Hice el modal más pequeño para que coincida con el estilo de la imagen */
     position: relative;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     overflow: hidden;
+    border: 3px solid #d32f2f; /* Borde rojo para coincidir con la tarjeta de tu imagen */
 }
 
 .close {
     color: #d32f2f;
     position: absolute;
-    right: 20px;
-    top: 15px;
-    font-size: 30px;
+    right: 15px;
+    top: 10px;
+    font-size: 24px;
     font-weight: bold;
     cursor: pointer;
     transition: color 0.3s ease;
@@ -123,39 +125,39 @@ header {
 
 #modal-details img {
     width: 100%;
-    max-height: 250px; /* Imagen más pequeña en el modal */
+    max-height: 150px; /* Imagen más pequeña en el modal, como en tu imagen */
     object-fit: cover;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-    border: 3px solid #d32f2f; /* Borde rojo para destacar el estilo artístico en el modal */
+    border-radius: 5px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid #d32f2f; /* Borde rojo más delgado para coincidir con tu imagen */
 }
 
 #modal-details h2 {
     color: #1976d2; /* Azul para el título en el modal */
-    font-size: 2em;
-    margin: 15px 0;
+    font-size: 1.5em; /* Texto más pequeño para el modal */
+    margin: 10px 0;
     font-weight: 600;
 }
 
 #modal-details p {
     color: #666;
-    font-size: 1.1em;
-    margin: 15px 0;
-    line-height: 1.6;
+    font-size: 0.9em; /* Texto más pequeño para el modal */
+    margin: 10px 0;
+    line-height: 1.4;
 }
 
 #modal-details ul {
     list-style: none;
     padding: 0;
-    margin: 20px 0;
+    margin: 15px 0;
 }
 
 #modal-details li {
-    font-size: 1.1em;
+    font-size: 0.9em; /* Texto más pequeño para el modal */
     color: #333;
-    padding: 10px 0;
-    border-bottom: 1px solid #eee;
+    padding: 8px 0;
+    border-bottom: 1px solid #ddd;
 }
 
 #modal-details .item-price {
