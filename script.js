@@ -9,7 +9,7 @@ function showDetails(category) {
             content = `
                 <img src="imagenes/burgerShot_baconlov.png" alt="Hamburguesa Quecu Infarto">
                 <h2>Hamburguesa Quecu Infarto</h2>
-                <p>Una jugosa hamburguesa con bacon crujiente, queso derretido, lechuga fresca, tomate y nuestra salsa especial. ¡Irresistible!</p>
+                <p>¡Irresistible!</p>
                 <ul>
                     <li>Quecu Infarto - $50</li>
                 </ul>
