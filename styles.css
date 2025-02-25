@@ -2,7 +2,7 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, #f5e6cc, #ffe0b2); /* Fondo degradado más elegante */
+    background: linear-gradient(135deg, #ff4d4d, #4d88ff); /* Fondo gradiente rojo-azul vibrante */
     color: #333;
 }
 
@@ -123,7 +123,7 @@ header {
 
 #modal-details img {
     width: 100%;
-    max-height: 400px;
+    max-height: 250px; /* Imagen más pequeña en el modal */
     object-fit: cover;
     border-radius: 10px;
     margin-bottom: 20px;
