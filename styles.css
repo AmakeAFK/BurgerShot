@@ -2,14 +2,14 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f5e6cc; /* Fondo beige claro, similar a la imagen */
+    background-color: #f5e6cc;
     color: #333;
 }
 
 header {
     text-align: center;
     padding: 20px 0;
-    background-color: #8a2b06; /* Marrón oscuro para el header, como en la imagen */
+    background-color: #8a2b06;
 }
 
 .logo-container {
@@ -24,14 +24,14 @@ header {
 
 h1 {
     text-align: center;
-    color: #d32f2f; /* Rojo para el título, como en la imagen */
+    color: #d32f2f;
     font-size: 2em;
     margin: 20px 0;
     text-transform: uppercase;
-    font-family: 'Impact', sans-serif; /* Fuente más impactante, como en la imagen */
+    font-family: 'Impact', sans-serif;
 }
 
-.menu-container {
+.menu-thumbnails {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -39,51 +39,98 @@ h1 {
     padding: 20px;
 }
 
-.menu-card {
-    background-color: #fff;
+.thumbnail {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 250px;
-    overflow: hidden;
-    text-align: center;
+    cursor: pointer;
     transition: transform 0.3s ease;
 }
 
-.menu-card:hover {
+.thumbnail:hover {
     transform: scale(1.05);
 }
 
-.menu-card img {
+.thumbnail img {
     width: 100%;
-    height: 200px;
+    height: 100%;
     object-fit: cover;
-    border-bottom: 2px solid #1976d2; /* Azul para el borde inferior, como en la imagen */
 }
 
-.menu-card h3 {
-    color: #1976d2; /* Azul para los títulos de las tarjetas */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 500px;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.close {
+    color: #d32f2f;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #1976d2;
+}
+
+#modal-details {
+    text-align: center;
+}
+
+#modal-details img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+#modal-details h2 {
+    color: #1976d2;
     font-size: 1.5em;
     margin: 10px 0;
 }
 
-.menu-card p {
-    font-size: 0.9em;
+#modal-details p {
     color: #666;
-    padding: 0 10px;
+    font-size: 1em;
+    margin: 10px 0;
 }
 
-.menu-card ul {
+#modal-details ul {
     list-style: none;
     padding: 0;
     margin: 10px 0;
 }
 
-.menu-card li {
-    font-size: 0.9em;
+#modal-details li {
+    font-size: 1em;
     color: #333;
     padding: 5px 0;
 }
 
-.menu-card .item-price {
-    color: #d32f2f; /* Rojo para los precios, como en la imagen */
+#modal-details .item-price {
+    color: #d32f2f;
 }
