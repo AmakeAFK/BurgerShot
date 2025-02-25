@@ -15,6 +15,16 @@ function showDetails(category) {
                 </ul>
             `;
             break;
+        case 'vegetariano':
+            content = `
+                <img src="imagenes/BurgerShot_MenuKid.png" alt="Cajita Feliz">
+                <h2>Cajita Feliz</h2>
+                <p>Por poner.</p>
+                <ul>
+                    <li>Cajita Feliz - $40</li>
+                </ul>
+            `;
+            break;
     }
 
     modalDetails.innerHTML = content;
