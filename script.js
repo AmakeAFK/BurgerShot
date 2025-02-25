@@ -15,7 +15,7 @@ function showDetails(category) {
                 </ul>
             `;
             break;
-        case 'vegetariano':
+        case 'cajitafeliz':
             content = `
                 <img src="imagenes/BurgerShot_MenuKid.png" alt="Cajita Feliz">
                 <h2>Cajita Feliz</h2>
