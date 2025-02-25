@@ -7,7 +7,7 @@ function showDetails(category) {
     switch(category) {
         case 'quecuinfarto':
             content = `
-                <img src="imagenes/burgerShot_baconlov.png" alt="Hamburguesa Bacon Love Burger Shot">
+                <img src="imagenes/burgerShot_baconlov.png" alt="Hamburguesa Quecu Infarto">
                 <h2>Hamburguesa Quecu Infarto</h2>
                 <p>Una hamburguesa que te ofrecera una experiencia completa por el hospital.</p>
                 <ul>
