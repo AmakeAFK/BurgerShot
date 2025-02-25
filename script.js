@@ -5,13 +5,13 @@ function showDetails(category) {
     let content = '';
 
     switch(category) {
-        case 'baconlove':
+        case 'quecuinfarto':
             content = `
                 <img src="imagenes/burgerShot_baconlov.png" alt="Hamburguesa Bacon Love Burger Shot">
-                <h2>Hamburguesa Bacon Love</h2>
-                <p>Una jugosa hamburguesa con bacon crujiente, queso derretido, lechuga fresca, tomate y nuestra salsa especial. ¡Irresistible!</p>
+                <h2>Hamburguesa Quecu Infarto</h2>
+                <p>Una hamburguesa que te ofrecera una experiencia completa por el hospital.</p>
                 <ul>
-                    <li>Bacon Love Burger - $12.50</li>
+                    <li>Bacon Quecu Infarto - $50</li>
                 </ul>
             `;
             break;
