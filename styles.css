@@ -1,56 +1,89 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 20px;
-    background-color: #f4f4f4;
+    padding: 0;
+    background-color: #f5e6cc; /* Fondo beige claro, similar a la imagen */
     color: #333;
+}
+
+header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #8a2b06; /* Marrón oscuro para el header, como en la imagen */
+}
+
+.logo-container {
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 100%;
+    height: auto;
 }
 
 h1 {
     text-align: center;
-    color: #d32f2f;
-}
-
-h2 {
-    color: #1976d2;
-    border-bottom: 2px solid #1976d2;
-    padding-bottom: 5px;
-}
-
-p {
-    text-align: center;
-    font-style: italic;
-}
-
-.menu-section {
+    color: #d32f2f; /* Rojo para el título, como en la imagen */
+    font-size: 2em;
     margin: 20px 0;
+    text-transform: uppercase;
+    font-family: 'Impact', sans-serif; /* Fuente más impactante, como en la imagen */
 }
 
-.item {
+.menu-container {
     display: flex;
-    justify-content: space-between;
-    padding: 10px;
-    border-bottom: 1px solid #ddd;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
 }
 
-.item-name {
-    font-weight: bold;
+.menu-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease;
 }
 
-.item-price {
-    color: #d32f2f;
+.menu-card:hover {
+    transform: scale(1.05);
 }
 
-.description {
+.menu-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 2px solid #1976d2; /* Azul para el borde inferior, como en la imagen */
+}
+
+.menu-card h3 {
+    color: #1976d2; /* Azul para los títulos de las tarjetas */
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.menu-card p {
     font-size: 0.9em;
     color: #666;
-    margin-left: 20px;
+    padding: 0 10px;
 }
 
-.item img {
-    width: 100px;
-    height: auto;
-    margin-right: 15px;
-    border-radius: 5px;
+.menu-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.menu-card li {
+    font-size: 0.9em;
+    color: #333;
+    padding: 5px 0;
+}
+
+.menu-card .item-price {
+    color: #d32f2f; /* Rojo para los precios, como en la imagen */
 }
