@@ -2,7 +2,7 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, #ff4d4d, #4d88ff); /* Fondo gradiente rojo-azul vibrante */
+    background-color: #f8e8d8; /* Tono beige más claro y suave para el fondo general */
     color: #333;
 }
 
@@ -43,7 +43,7 @@ header {
     justify-content: center;
     gap: 30px;
     padding: 40px;
-    background-color: #f5e6cc; /* Fondo beige para las tarjetas, como antes */
+    background-color: transparent; /* Sin fondo para las tarjetas, transparente */
     border-radius: 15px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
     margin: 20px auto;
@@ -51,15 +51,15 @@ header {
 }
 
 .thumbnail {
-    width: 200px; /* Aumenté ligeramente el tamaño para destacar la imagen artística */
-    height: 200px;
+    width: 150px; /* Tamaño menor para la thumbnail */
+    height: 150px;
     overflow: hidden;
     border-radius: 15px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border: 3px solid #d32f2f; /* Borde rojo para resaltar el estilo artístico */
-    background-color: #f5e6cc; /* Fondo beige para las thumbnails */
+    background-color: transparent; /* Sin fondo para la thumbnail, transparente */
 }
 
 .thumbnail:hover {
@@ -92,16 +92,16 @@ header {
 }
 
 .modal-content {
-    background-color: #f5e6cc; /* Fondo beige para el modal, como antes */
+    background-color: transparent; /* Sin fondo para el modal, transparente */
     margin: 10% auto;
     padding: 20px;
     border-radius: 15px;
     width: 90%;
-    max-width: 400px; /* Hice el modal más pequeño para que coincida con el estilo de la imagen */
+    max-width: 400px; /* Mantenido pequeño para coincidir con el estilo */
     position: relative;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     overflow: hidden;
-    border: 3px solid #d32f2f; /* Borde rojo para coincidir con la tarjeta de tu imagen */
+    border: 3px solid #d32f2f; /* Borde rojo para coincidir con la tarjeta */
 }
 
 .close {
@@ -121,16 +121,20 @@ header {
 
 #modal-details {
     text-align: center;
+    background-color: #fff; /* Fondo blanco para los detalles dentro del modal */
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 #modal-details img {
     width: 100%;
-    max-height: 150px; /* Imagen más pequeña en el modal, como en tu imagen */
+    max-height: 120px; /* Tamaño menor para la imagen en el modal */
     object-fit: cover;
     border-radius: 5px;
     margin-bottom: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border: 2px solid #d32f2f; /* Borde rojo más delgado para coincidir con tu imagen */
+    border: 2px solid #d32f2f; /* Borde rojo más delgado */
 }
 
 #modal-details h2 {
