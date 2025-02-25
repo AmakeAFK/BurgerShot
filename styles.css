@@ -1,15 +1,16 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f5e6cc;
+    background: linear-gradient(135deg, #f5e6cc, #ffe0b2); /* Fondo degradado más elegante */
     color: #333;
 }
 
 header {
     text-align: center;
     padding: 20px 0;
-    background-color: #8a2b06;
+    background-color: #8a2b06; /* Marrón oscuro para el header */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .logo-container {
@@ -20,43 +21,56 @@ header {
 .logo {
     width: 100%;
     height: auto;
+    border-radius: 10px;
 }
 
-h1 {
+.title {
     text-align: center;
-    color: #d32f2f;
-    font-size: 2em;
+    color: #d32f2f; /* Rojo vibrante para el título */
+    font-size: 2.5em;
     margin: 20px 0;
     text-transform: uppercase;
-    font-family: 'Impact', sans-serif;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
 .menu-thumbnails {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
-    padding: 20px;
+    gap: 30px;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo semi-transparente para contraste */
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 1200px;
 }
 
 .thumbnail {
-    width: 150px;
-    height: 150px;
+    width: 200px; /* Aumenté ligeramente el tamaño para destacar la imagen artística */
+    height: 200px;
     overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
     cursor: pointer;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 3px solid #d32f2f; /* Borde rojo para resaltar el estilo artístico */
 }
 
 .thumbnail:hover {
-    transform: scale(1.05);
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(211, 47, 47, 0.3); /* Sombra roja al pasar el ratón */
 }
 
 .thumbnail img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    filter: brightness(1.1); /* Ajuste leve para resaltar si es artística */
 }
 
 .modal {
@@ -66,33 +80,41 @@ h1 {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.7);
     z-index: 1000;
+    animation: fadeInModal 0.3s ease-in;
+}
+
+@keyframes fadeInModal {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
 .modal-content {
     background-color: #fff;
-    margin: 15% auto;
-    padding: 20px;
-    border-radius: 10px;
-    width: 80%;
-    max-width: 500px;
+    margin: 10% auto;
+    padding: 30px;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 600px;
     position: relative;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
 }
 
 .close {
     color: #d32f2f;
     position: absolute;
     right: 20px;
-    top: 10px;
-    font-size: 24px;
+    top: 15px;
+    font-size: 30px;
     font-weight: bold;
     cursor: pointer;
+    transition: color 0.3s ease;
 }
 
 .close:hover {
-    color: #1976d2;
+    color: #1976d2; /* Azul al pasar el ratón */
 }
 
 #modal-details {
@@ -101,36 +123,42 @@ h1 {
 
 #modal-details img {
     width: 100%;
-    max-height: 300px;
+    max-height: 400px;
     object-fit: cover;
-    border-radius: 5px;
-    margin-bottom: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    border: 3px solid #d32f2f; /* Borde rojo para destacar el estilo artístico en el modal */
 }
 
 #modal-details h2 {
-    color: #1976d2;
-    font-size: 1.5em;
-    margin: 10px 0;
+    color: #1976d2; /* Azul para el título en el modal */
+    font-size: 2em;
+    margin: 15px 0;
+    font-weight: 600;
 }
 
 #modal-details p {
     color: #666;
-    font-size: 1em;
-    margin: 10px 0;
+    font-size: 1.1em;
+    margin: 15px 0;
+    line-height: 1.6;
 }
 
 #modal-details ul {
     list-style: none;
     padding: 0;
-    margin: 10px 0;
+    margin: 20px 0;
 }
 
 #modal-details li {
-    font-size: 1em;
+    font-size: 1.1em;
     color: #333;
-    padding: 5px 0;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
 }
 
 #modal-details .item-price {
-    color: #d32f2f;
+    color: #d32f2f; /* Rojo para los precios */
+    font-weight: 600;
 }
