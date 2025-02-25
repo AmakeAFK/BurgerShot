@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú de Burger Shot</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Sección del logo -->
+    <header>
+        <div class="logo-container">
+            <img src="imagenes/logo_burgershot.png" alt="Logo Burger Shot" class="logo">
+        </div>
+    </header>
+
+    <!-- Título del menú -->
+    <h1>Nuestro Menú</h1>
+
+    <!-- Contenedor de thumbnails (tarjetas pequeñas) -->
+    <div class="menu-thumbnails">
+        <!-- Novedades -->
+        <div class="thumbnail" onclick="showDetails('novedades')">
+            <img src="imagenes/novedades_burger.jpg" alt="Novedades Burger Shot">
+        </div>
+
+        <!-- Menú Parrilla -->
+        <div class="thumbnail" onclick="showDetails('parrilla')">
+            <img src="imagenes/parrilla_burger.jpg" alt="Menú Parrilla Burger Shot">
+        </div>
+
+        <!-- Menú Pollo -->
+        <div class="thumbnail" onclick="showDetails('pollo')">
+            <img src="imagenes/pollo_burger.jpg" alt="Menú Pollo Burger Shot">
+        </div>
+
+        <!-- Acompañamientos -->
+        <div class="thumbnail" onclick="showDetails('acompannamientos')">
+            <img src="imagenes/acompannamientos.jpg" alt="Acompañamientos Burger Shot">
+        </div>
+
+        <!-- Bebidas -->
+        <div class="thumbnail" onclick="showDetails('bebidas')">
+            <img src="imagenes/bebidas.jpg" alt="Bebidas Burger Shot">
+        </div>
+
+        <!-- Postres -->
+        <div class="thumbnail" onclick="showDetails('postres')">
+            <img src="imagenes/postres.jpg" alt="Postres Burger Shot">
+        </div>
+    </div>
+
+    <!-- Modal para mostrar detalles (ampliada) -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div id="modal-details"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
