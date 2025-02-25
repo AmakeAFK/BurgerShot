@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menú de Burger Shot</title>
+    <title>Menú de Burger Shot - Bacon Love</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Sección del logo -->
@@ -14,46 +15,21 @@
         </div>
     </header>
 
-    <!-- Título del menú -->
-    <h1>Nuestro Menú</h1>
+    <!-- Título del menú con animación -->
+    <h1 class="title">Nuestro Menú</h1>
 
     <!-- Contenedor de thumbnails (tarjetas pequeñas) -->
     <div class="menu-thumbnails">
-        <!-- Novedades -->
-        <div class="thumbnail" onclick="showDetails('novedades')">
-            <img src="imagenes/novedades_burger.jpg" alt="Novedades Burger Shot">
-        </div>
-
-        <!-- Menú Parrilla -->
-        <div class="thumbnail" onclick="showDetails('parrilla')">
-            <img src="imagenes/parrilla_burger.jpg" alt="Menú Parrilla Burger Shot">
-        </div>
-
-        <!-- Menú Pollo -->
-        <div class="thumbnail" onclick="showDetails('pollo')">
-            <img src="imagenes/pollo_burger.jpg" alt="Menú Pollo Burger Shot">
-        </div>
-
-        <!-- Acompañamientos -->
-        <div class="thumbnail" onclick="showDetails('acompannamientos')">
-            <img src="imagenes/acompannamientos.jpg" alt="Acompañamientos Burger Shot">
-        </div>
-
-        <!-- Bebidas -->
-        <div class="thumbnail" onclick="showDetails('bebidas')">
-            <img src="imagenes/bebidas.jpg" alt="Bebidas Burger Shot">
-        </div>
-
-        <!-- Postres -->
-        <div class="thumbnail" onclick="showDetails('postres')">
-            <img src="imagenes/postres.jpg" alt="Postres Burger Shot">
+        <!-- Solo una tarjeta para la hamburguesa Bacon Love -->
+        <div class="thumbnail" onclick="showDetails('baconlove')">
+            <img src="imagenes/burgerShot_baconlov.png" alt="Hamburguesa Bacon Love Burger Shot">
         </div>
     </div>
 
     <!-- Modal para mostrar detalles (ampliada) -->
     <div id="modal" class="modal">
         <div class="modal-content">
-            <span class="close" onclick="closeModal()">&times;</span>
+            <span class="close" onclick="closeModal()">×</span>
             <div id="modal-details"></div>
         </div>
     </div>
