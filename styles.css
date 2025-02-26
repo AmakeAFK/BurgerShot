@@ -11,7 +11,7 @@ header {
     padding: 20px;
     background-color: #8a2b06;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    position: relative; /* Para posicionar el botón respecto al header */
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -32,11 +32,13 @@ header {
     position: absolute;
     right: 20px;
     top: 50%;
-    transform: translateY(-50%); /* Centra verticalmente respecto al header */
+    transform: translateY(-50%);
+    display: flex; /* Alinea los botones horizontalmente */
+    gap: 10px; /* Espacio entre botones */
 }
 
 .menu-button {
-    background-color: #d32f2f; /* Rojo vibrante */
+    background-color: #d32f2f;
     color: #fff;
     font-family: 'Poppins', sans-serif;
     font-size: 1.1em;
@@ -49,11 +51,10 @@ header {
 }
 
 .menu-button:hover {
-    background-color: #1976d2; /* Azul al pasar el ratón */
+    background-color: #1976d2;
     transform: scale(1.05);
 }
 
-/* Resto de los estilos se mantienen igual */
 .title {
     text-align: center;
     color: #d32f2f;
@@ -78,6 +79,7 @@ header {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
     margin: 20px auto;
     max-width: 1200px;
+    flex-wrap: wrap; /* Permite que las thumbnails se ajusten en pantallas pequeñas */
 }
 
 .thumbnail {
