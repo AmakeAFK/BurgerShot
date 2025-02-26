@@ -46,7 +46,7 @@ function showDetails(category) {
             break;
         case 'comboEspecial':
             content = `
-                <h2>Combo Especial - Elige tu favorito</h2>
+                <h2>Cheeseburgers - Elige tu favorita</h2>
                 <div class="combo-sections">
                     <div class="combo-section">
                         <img src="imagenes/burgerShot_cheese.png" alt="Cheeseburger Normal">
