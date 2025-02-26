@@ -45,6 +45,16 @@ function showDetails(category) {
                 </ul>
             `;
             break;
+        case 'burritopollo':
+            content = `
+                <img src="iimagenes/burgerShot_cheese.png" alt="Hamburguesa con queso>
+                <h2>Cheeseburger Normal</h2>
+                <p>Por poner.</p>
+                <ul>
+                    <li>Cheeseburger Normal - $40</li>
+                </ul>
+            `;
+            break;
     }
 
     modalDetails.innerHTML = content;
