@@ -46,22 +46,22 @@ function showDetails(category) {
             break;
         case 'comboEspecial':
             content = `
-                <h2>Combo Especial</h2>
+                <h2>Cheeseburgers</h2>
                 <p>Elige tu favorito:</p>
                 <div class="sub-thumbnails">
                     <div class="sub-thumbnail">
                         <img src="imagenes/burgerShot_cheese.png" alt="Cheeseburger Normal">
-                        <h3>Combo 1</h3>
+                        <h3>Cheeseburger Normal</h3>
                         <p>Hamburguesa con queso - $50</p>
                     </div>
                     <div class="sub-thumbnail">
                         <img src="imagenes/burgerShot_cheese2.png" alt="Doble Cheeseburger">
-                        <h3>Combo 2</h3>
+                        <h3>Doble Cheeseburger</h3>
                         <p>Doble Cheeseburger - $50</p>
                     </div>
                     <div class="sub-thumbnail">
                         <img src="imagenes/burgerShot_cheese3.png" alt="Triple Cheeseburger">
-                        <h3>Combo 3</h3>
+                        <h3>Triple Cheeseburger</h3>
                         <p>Triple Cheeseburger - $50</p>
                     </div>
                 </div>
