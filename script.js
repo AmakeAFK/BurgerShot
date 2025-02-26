@@ -2,6 +2,13 @@ function showDetails(category) {
     const modal = document.getElementById('modal');
     const modalDetails = document.getElementById('modal-details');
     let content = '';
+    function showDetails(category) {
+        console.log("Categoría seleccionada:", category);
+        const modal = document.getElementById('modal');
+        const modalDetails = document.getElementById('modal-details');
+        let content = '';
+        // Resto del código...
+    }
 
     switch(category) {
         case 'baconlove':
