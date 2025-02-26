@@ -17,7 +17,7 @@ function showDetails(category) {
         case 'cajitafeliz':
             content = `
                 <img src="imagenes/BurgerShot_MenuKid.png" alt="Cajita Feliz">
-                <h2>Cajita Feliz</h2>
+                <h2>Caja de la alegria</h2>
                 <p>El menú perfecto para las nuevas juventudes</p>
                 <ul>
                     <li>Cajita Feliz - $50</li>
