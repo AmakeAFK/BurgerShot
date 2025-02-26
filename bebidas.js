@@ -38,11 +38,11 @@ function showDetails(category) {
         // Puedes agregar más bebidas aquí
         case 'agua':
             content = `
-                <img src="imagenes/agua.png" alt="Agua">
+                <img src="imagenes/water_bottle.png" alt="Agua">
                 <h2>Agua</h2>
                 <p>Pura y refrescante.</p>
                 <ul>
-                    <li>Agua (500ml) - $15</li>
+                    <li>Agua (500ml) - $40</li>
                 </ul>
             `;
             break;
