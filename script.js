@@ -46,7 +46,7 @@ function showDetails(category) {
             break;
         case 'patatas':
             content = `
-                <img src="imagenes/burgerShot_LoadedFries.png" alt="Patatas">
+                <img src="imagenes/frites_burgershot.png" alt="Patatas">
                 <h2>Patatas</h2>
                 <p>El menú perfecto para las nuevas juventudes</p>
                 <ul>
