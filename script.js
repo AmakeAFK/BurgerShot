@@ -25,6 +25,16 @@ function showDetails(category) {
                 </ul>
             `;
             break;
+        case 'burritopollo':
+            content = `
+                <img src="imagenes/burgerShot_BuritosChicken.png" alt="Burrito de Pollo">
+                <h2>Burrito de pollo/h2>
+                <p>Por poner.</p>
+                <ul>
+                    <li>Burrito de pollo - $40</li>
+                </ul>
+            `;
+            break;
     }
 
     modalDetails.innerHTML = content;
