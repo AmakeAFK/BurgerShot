@@ -3,24 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menú de Burger Shot</title>
+    <title>Burger Shot - Sabores Explosivos</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <header>
-        <div class="logo-container">
-            <img src="imagenes/logo_burgershot.png" alt="Logo Burger Shot" class="logo">
-        </div>
-        <div class="button-container">
-            <button onclick="window.location.href='combos.html'" class="menu-button">Menús</button>
-            <button onclick="window.location.href='bebidas.html'" class="menu-button">Bebidas</button>
-        </div>
+        <nav class="nav-container">
+            <div class="logo-container">
+                <img src="imagenes/logo_burgershot.png" alt="Burger Shot" class="logo">
+            </div>
+            <div class="nav-links">
+                <a href="#combos" class="nav-link"><i class="fas fa-burger"></i>Combos</a>
+                <a href="#bebidas" class="nav-link"><i class="fas fa-cocktail"></i>Bebidas</a>
+                <a href="#contacto" class="nav-link cta-button">Pedir Ahora</a>
+            </div>
+        </nav>
     </header>
 
-    <h1 class="title">Nuestro Menú</h1>
+    <section class="hero">
+        <h1 class="hero-title">Descubre el <span>verdadero sabor</span><br>de nuestras hamburguesas</h1>
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+        </div>
+    </section>
 
-    <div class="menu-thumbnails">
+    <section class="menu-section">
+        <h2 class="section-title">Nuestra Explosión de Sabores</h2>
+        <div class="menu-grid">
         <div class="thumbnail" onclick="showDetails('baconlove')">
             <img src="imagenes/burgerShot_baconlov.png" alt="Hamburguesa Quecu Infarto">
         </div>
@@ -42,8 +53,8 @@
         <div class="thumbnail" onclick="showDetails('patatas')">
             <img src="imagenes/frites_burgershot.png" alt="Patatas">
         </div>
-    </div>
-
+    </section>
+    
     <div id="modal" class="modal">
         <div class="modal-content">
             <span class="close" onclick="closeModal()">×</span>
