@@ -1,4 +1,3 @@
-// Función para mostrar el modal con detalles
 function showDetails(category) {
     const modal = document.getElementById('modal');
     const modalDetails = document.getElementById('modal-details');
@@ -47,14 +46,25 @@ function showDetails(category) {
             break;
         case 'comboEspecial':
             content = `
-            <img src="imagenes/combo_especial.png" alt="Combo Especial">
-            <h2>Combo Especial</h2>
-            <p>¡Tres opciones deliciosas para compartir!</p>
-            <ul>
-                <li>Combo 1: Hamburguesa + Papas - $60</li>
-                <li>Combo 2: Burrito + Refresco - $55</li>
-                <li>Combo 3: Cajita Feliz + Jugo - $50</li>
-            </ul>
+                <h2>Combo Especial</h2>
+                <p>Elige tu favorito:</p>
+                <div class="sub-thumbnails">
+                    <div class="sub-thumbnail">
+                        <img src="imagenes/combo1.png" alt="Combo 1">
+                        <h3>Combo 1</h3>
+                        <p>Hamburguesa + Papas - $60</p>
+                    </div>
+                    <div class="sub-thumbnail">
+                        <img src="imagenes/combo2.png" alt="Combo 2">
+                        <h3>Combo 2</h3>
+                        <p>Burrito + Refresco - $55</p>
+                    </div>
+                    <div class="sub-thumbnail">
+                        <img src="imagenes/combo3.png" alt="Combo 3">
+                        <h3>Combo 3</h3>
+                        <p>Cajita Feliz + Jugo - $50</p>
+                    </div>
+                </div>
             `;
             break;
     }
@@ -63,7 +73,6 @@ function showDetails(category) {
     modal.style.display = 'block';
 }
 
-// Función para cerrar el modal
 function closeModal() {
     const modal = document.getElementById('modal');
     modal.style.display = 'none';
