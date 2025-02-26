@@ -50,19 +50,19 @@ function showDetails(category) {
                 <p>Elige tu favorito:</p>
                 <div class="sub-thumbnails">
                     <div class="sub-thumbnail">
-                        <img src="imagenes/combo1.png" alt="Combo 1">
+                        <img src="imagenes/burgerShot_cheese.png" alt="Cheeseburger Normal">
                         <h3>Combo 1</h3>
-                        <p>Hamburguesa + Papas - $60</p>
+                        <p>Hamburguesa con queso - $50</p>
                     </div>
                     <div class="sub-thumbnail">
-                        <img src="imagenes/combo2.png" alt="Combo 2">
+                        <img src="imagenes/burgerShot_cheese2.png" alt="Doble Cheeseburger">
                         <h3>Combo 2</h3>
-                        <p>Burrito + Refresco - $55</p>
+                        <p>Doble Cheeseburger - $50</p>
                     </div>
                     <div class="sub-thumbnail">
-                        <img src="imagenes/combo3.png" alt="Combo 3">
+                        <img src="imagenes/burgerShot_cheese3.png" alt="Triple Cheeseburger">
                         <h3>Combo 3</h3>
-                        <p>Cajita Feliz + Jugo - $50</p>
+                        <p>Triple Cheeseburger - $50</p>
                     </div>
                 </div>
             `;
