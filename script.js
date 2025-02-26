@@ -44,6 +44,16 @@ function showDetails(category) {
                 </ul>
             `;
             break;
+        case 'patatas':
+            content = `
+                <img src="imagenes/burgerShot_LoadedFries.png" alt="Patatas">
+                <h2>Patatas</h2>
+                <p>El menú perfecto para las nuevas juventudes</p>
+                <ul>
+                    <li>Patatas - $40</li>
+                </ul>
+            `;
+            break;
         case 'burrito':
             content = `
                 <h2>Burritos - Elige tu favorito</h2>
