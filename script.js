@@ -26,22 +26,20 @@ function showDetails(category) {
             break;
         case 'burrito':
             content = `
-                <img src="imagenes/burgerShot_buritos.png" alt="Burrito">
-                <h2>Burrito</h2>
-                <p>Burrito de carne muyyyyyyy bueno</p>
-                <ul>
-                    <li>Burrito - $50</li>
-                </ul>
-            `;
-            break;
-        case 'burritopollo':
-            content = `
-                <img src="imagenes/burgerShot_BuritosChicken.png" alt="Burrito de Pollo">
-                <h2>Burrito de pollo</h2>
-                <p>Burrito de pollo muyyyyyyy bueno</p>
-                <ul>
-                    <li>Burrito de pollo - $50</li>
-                </ul>
+                <h2>Burritos - Elige tu favorito</h2>
+                <div class="combo-sections">
+                    <div class="combo-section">
+                        <img src="imagenes/burgerShot_buritos.png" alt="Burrito de carne">
+                        <h3>Burrito de carne</h3>
+                        <p>Burrito de carne muyyyyyyy bueno</p>
+                        <p class="price">$50</p>
+                    </div>
+                    <div class="combo-section">
+                        <img src="imagenes/burgerShot_BuritosChicken.png" alt="Burrito de pollo">
+                        <h3>Burrito de pollo</h3>
+                        <p>Burrito de pollo muyyyyyyy bueno</p>
+                        <p class="price">$65</p>
+                    </div>
             `;
             break;
         case 'cheeseburgers':
