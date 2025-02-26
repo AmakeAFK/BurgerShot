@@ -15,7 +15,7 @@ function showDetails(category) {
                 </ul>
             `;
             break;
-        case 'burgercafe':
+        case 'burgercafé':
             content = `
                 <img src="imagenes/jugo.png" alt="Café Burger">
                 <h2>Café Burger</h2>
