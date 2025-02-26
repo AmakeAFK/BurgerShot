@@ -168,3 +168,48 @@ header {
     color: #d32f2f; /* Rojo para los precios */
     font-weight: 600;
 }
+
+.sub-thumbnails {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Espacio entre las sub-tarjetas */
+    flex-wrap: wrap; /* Permite que se ajusten en pantallas pequeñas */
+    padding: 10px;
+}
+
+.sub-thumbnail {
+    width: 100px; /* Tamaño más pequeño para las sub-tarjetas */
+    height: auto;
+    background-color: #fff; /* Fondo blanco para cada sub-tarjeta */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 10px;
+    border: 2px solid #d32f2f; /* Borde rojo para mantener el estilo */
+    transition: transform 0.3s ease;
+}
+
+.sub-thumbnail:hover {
+    transform: scale(1.05); /* Efecto de aumento al pasar el ratón */
+}
+
+.sub-thumbnail img {
+    width: 100%;
+    height: 60px; /* Altura fija para las imágenes de las sub-tarjetas */
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.sub-thumbnail h3 {
+    color: #1976d2; /* Azul para los títulos */
+    font-size: 1em; /* Tamaño de fuente pequeño */
+    margin: 5px 0;
+}
+
+.sub-thumbnail p {
+    color: #d32f2f; /* Rojo para los precios */
+    font-size: 0.9em;
+    font-weight: 600;
+    margin: 5px 0;
+}
