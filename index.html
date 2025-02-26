@@ -8,19 +8,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Sección del logo -->
     <header>
         <div class="logo-container">
             <img src="imagenes/logo_burgershot.png" alt="Logo Burger Shot" class="logo">
         </div>
+        <!-- Botón en la esquina superior derecha -->
+        <div class="button-container">
+            <button onclick="window.location.href='combos.html'" class="menu-button">Menús</button>
+        </div>
     </header>
 
-    <!-- Título del menú con animación -->
     <h1 class="title">Nuestro Menú</h1>
 
-    <!-- Contenedor de thumbnails (tarjetas pequeñas) -->
     <div class="menu-thumbnails">
-        <!-- Solo una tarjeta para la hamburguesa Quecu Infarto -->
         <div class="thumbnail" onclick="showDetails('baconlove')">
             <img src="imagenes/burgerShot_baconlov.png" alt="Hamburguesa Quecu Infarto">
         </div>
@@ -34,11 +34,10 @@
             <img src="imagenes/burgerShot_BuritosChicken.png" alt="Burrito de Pollo">
         </div>
         <div class="thumbnail" onclick="showDetails('comboEspecial')">
-            <img src="imagenes/burgerShot_cheese3.png" alt="Cheeseburgers">
+            <img src="imagenes/combo_especial.png" alt="Combo Especial">
         </div>
     </div>
 
-    <!-- Modal para mostrar detalles (ampliada) -->
     <div id="modal" class="modal">
         <div class="modal-content">
             <span class="close" onclick="closeModal()">×</span>
