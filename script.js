@@ -45,6 +45,18 @@ function showDetails(category) {
                 </ul>
             `;
             break;
+        case 'comboEspecial':
+            content = `
+            <img src="imagenes/combo_especial.png" alt="Combo Especial">
+            <h2>Combo Especial</h2>
+            <p>¡Tres opciones deliciosas para compartir!</p>
+            <ul>
+                <li>Combo 1: Hamburguesa + Papas - $60</li>
+                <li>Combo 2: Burrito + Refresco - $55</li>
+                <li>Combo 3: Cajita Feliz + Jugo - $50</li>
+            </ul>
+            `;
+            break;
     }
 
     modalDetails.innerHTML = content;
