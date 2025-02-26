@@ -5,13 +5,13 @@ function showDetails(category) {
     let content = '';
 
     switch(category) {
-        case 'refresco':
+        case 'milfshake':
             content = `
-                <img src="imagenes/refresco.png" alt="Refresco">
-                <h2>Refresco</h2>
-                <p>Refrescante y burbujeante.</p>
+                <img src="imagenes/0.milkskake.png" alt="Milfshake">
+                <h2>Milk Shake</h2>
+                <p>Refrescante.</p>
                 <ul>
-                    <li>Refresco (500ml) - $20</li>
+                    <li>Milk Shake (500ml) - $45</li>
                 </ul>
             `;
             break;
