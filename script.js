@@ -98,11 +98,3 @@ function closeModal() {
     const modal = document.getElementById('modal');
     modal.style.display = 'none';
 }
-
-function showDetails(category) {
-    const modal = document.getElementById('modal');
-    const modalDetails = document.getElementById('modal-details');
-    console.log("Modal:", modal, "Modal Details:", modalDetails);
-    let content = '';
-    // Resto del código...
-}
