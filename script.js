@@ -101,7 +101,7 @@ function showDetails(category) {
     }
 
     modalDetails.innerHTML = content;
-    modal.style.display = 'flex';
+    modal.style.display = 'block';
 }
 
 function closeModal() {
