@@ -24,7 +24,7 @@ function showDetails(category) {
                 </ul>
             `;
             break;
-        case 'cajitafeliz':
+        case 'pollofrito':
             content = `
                 <img src="imagenes/burgerShot_chickenStick.png" alt="Pollo Frito">
                 <h2>Pollo Frito</h2>
