@@ -43,7 +43,7 @@ function showDetails(category) {
                 </div>
             `;
             break;
-        case 'comboEspecial':
+        case 'cheeseburgers':
             content = `
                 <h2>Cheeseburgers - Elige tu favorita</h2>
                 <div class="combo-sections">
