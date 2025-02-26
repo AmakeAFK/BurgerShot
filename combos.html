@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menús - Burger Shot</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="imagenes/logo_burgershot.png" alt="Logo Burger Shot" class="logo">
+        </div>
+        <div class="button-container">
+            <button onclick="window.location.href='index.html'" class="menu-button">Menú Principal</button>
+        </div>
+    </header>
+
+    <h1 class="title">Nuestros Menús</h1>
+
+    <!-- Contenedor de thumbnails para productos -->
+    <div class="menu-thumbnails">
+        <div class="thumbnail" onclick="showDetails('combo1')">
+            <img src="imagenes/combo1.png" alt="Combo 1">
+        </div>
+        <div class="thumbnail" onclick="showDetails('combo2')">
+            <img src="imagenes/combo2.png" alt="Combo 2">
+        </div>
+        <div class="thumbnail" onclick="showDetails('combo3')">
+            <img src="imagenes/combo3.png" alt="Combo 3">
+        </div>
+        <!-- Puedes agregar más thumbnails aquí -->
+    </div>
+
+    <!-- Modal para mostrar detalles -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">×</span>
+            <div id="modal-details"></div>
+        </div>
+    </div>
+
+    <script src="combos.js"></script> <!-- Nuevo archivo JavaScript para esta página -->
+</body>
+</html>
