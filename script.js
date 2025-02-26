@@ -34,6 +34,16 @@ function showDetails(category) {
                 </ul>
             `;
             break;
+        case 'nashot':
+            content = `
+                <img src="imagenes/burgerShot_natchos.png" alt="Nashots">
+                <h2>Nashots</h2>
+                <p>El menú perfecto para las nuevas juventudes</p>
+                <ul>
+                    <li>Nashots - $40</li>
+                </ul>
+            `;
+            break;
         case 'burrito':
             content = `
                 <h2>Burritos - Elige tu favorito</h2>
