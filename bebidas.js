@@ -27,11 +27,11 @@ function showDetails(category) {
             break;
         case 'cerveza':
             content = `
-                <img src="imagenes/cerveza.png" alt="Cerveza">
+                <img src="imagenes/beer.png" alt="Cerveza">
                 <h2>Cerveza</h2>
                 <p>Fría y perfecta para acompañar.</p>
                 <ul>
-                    <li>Cerveza (355ml) - $30</li>
+                    <li>Cerveza (355ml) - $50</li>
                 </ul>
             `;
             break;
