@@ -38,7 +38,7 @@ function showDetails(category) {
                         <img src="imagenes/burgerShot_BuritosChicken.png" alt="Burrito de pollo">
                         <h3>Burrito de pollo</h3>
                         <p>Burrito de pollo muyyyyyyy bueno</p>
-                        <p> class="price">$65</p>
+                        <p class="price">$65</p>
                     </div>
                 </div>
             `;
