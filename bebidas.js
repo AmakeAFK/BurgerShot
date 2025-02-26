@@ -46,6 +46,16 @@ function showDetails(category) {
                 </ul>
             `;
             break;
+        case 'agua':
+            content = `
+                <img src="imagenes/drink_burger.png" alt="Burger soda">
+                <h2>Burger soda</h2>
+                <p>Pura y refrescante.</p>
+                <ul>
+                    <li>Burger soda (500ml) - $50</li>
+                </ul>
+            `;
+            break;
     }
 
     modalDetails.innerHTML = content;
