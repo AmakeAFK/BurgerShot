@@ -47,7 +47,7 @@ function showDetails(category) {
             break;
         case 'cheeseburger':
             content = `
-                <img src="iimagenes/burgerShot_cheese.png" alt="Hamburguesa con queso>
+                <img src="imagenes/burgerShot_cheese.png" alt="Hamburguesa con queso>
                 <h2>Cheeseburger Normal</h2>
                 <p>Por poner.</p>
                 <ul>
@@ -57,7 +57,7 @@ function showDetails(category) {
             break;
         case 'cheeseburger2':
             content = `
-                <img src="iimagenes/burgerShot_cheese.png" alt="Hamburguesa doble con queso>
+                <img src="imagenes/burgerShot_cheese.png" alt="Hamburguesa doble con queso>
                 <h2>Doble Cheeseburger</h2>
                 <p>Por poner.</p>
                 <ul>
@@ -67,7 +67,7 @@ function showDetails(category) {
             break;
         case 'cheeseburger3':
             content = `
-                <img src="iimagenes/burgerShot_cheese.png" alt="Hamburguesa triple con queso>
+                <img src="imagenes/burgerShot_cheese.png" alt="Hamburguesa triple con queso>
                 <h2>Triple Cheeseburger</h2>
                 <p>Por poner.</p>
                 <ul>
