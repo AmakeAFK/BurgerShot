@@ -2,14 +2,14 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f8e8d8; /* Tono beige más claro y suave para el fondo general */
+    background-color: #f8e8d8;
     color: #333;
 }
 
 header {
     text-align: center;
     padding: 20px 0;
-    background-color: #8a2b06; /* Marrón oscuro para el header */
+    background-color: #8a2b06;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -26,7 +26,7 @@ header {
 
 .title {
     text-align: center;
-    color: #d32f2f; /* Rojo vibrante para el título */
+    color: #d32f2f;
     font-size: 2.5em;
     margin: 20px 0;
     text-transform: uppercase;
@@ -43,7 +43,7 @@ header {
     justify-content: center;
     gap: 30px;
     padding: 40px;
-    background-color: transparent; /* Sin fondo para las tarjetas, transparente */
+    background-color: transparent;
     border-radius: 15px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
     margin: 20px auto;
@@ -51,27 +51,27 @@ header {
 }
 
 .thumbnail {
-    width: 150px; /* Tamaño menor para la thumbnail */
+    width: 150px;
     height: 150px;
     overflow: hidden;
     border-radius: 15px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border: 3px solid #d32f2f; /* Borde rojo para resaltar el estilo artístico */
-    background-color: transparent; /* Sin fondo para la thumbnail, transparente */
+    border: 3px solid #d32f2f;
+    background-color: transparent;
 }
 
 .thumbnail:hover {
     transform: scale(1.1);
-    box-shadow: 0 10px 20px rgba(211, 47, 47, 0.3); /* Sombra roja al pasar el ratón */
+    box-shadow: 0 10px 20px rgba(211, 47, 47, 0.3);
 }
 
 .thumbnail img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    filter: brightness(1.1); /* Ajuste leve para resaltar si es artística */
+    filter: brightness(1.1);
 }
 
 .modal {
@@ -92,16 +92,16 @@ header {
 }
 
 .modal-content {
-    background-color: transparent; /* Sin fondo para el modal, transparente */
-    margin: 10% auto;
+    background-color: transparent;
+    margin: 5% auto;
     padding: 20px;
     border-radius: 15px;
     width: 90%;
-    max-width: 400px; /* Mantenido pequeño para coincidir con el estilo */
+    max-width: 800px; /* Más ancho para las tres secciones */
     position: relative;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-    border: 3px solid #d32f2f; /* Borde rojo para coincidir con la tarjeta */
+    overflow-y: auto; /* Scroll si es necesario */
+    border: 3px solid #d32f2f;
 }
 
 .close {
@@ -116,37 +116,37 @@ header {
 }
 
 .close:hover {
-    color: #1976d2; /* Azul al pasar el ratón */
+    color: #1976d2;
 }
 
 #modal-details {
     text-align: center;
-    background-color: #fff; /* Fondo blanco para los detalles dentro del modal */
-    padding: 15px;
+    background-color: #fff;
+    padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 #modal-details img {
     width: 100%;
-    max-height: 120px; /* Tamaño menor para la imagen en el modal */
+    max-height: 150px;
     object-fit: cover;
     border-radius: 5px;
     margin-bottom: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border: 2px solid #d32f2f; /* Borde rojo más delgado */
+    border: 2px solid #d32f2f;
 }
 
 #modal-details h2 {
-    color: #1976d2; /* Azul para el título en el modal */
-    font-size: 1.5em; /* Texto más pequeño para el modal */
+    color: #1976d2;
+    font-size: 1.8em;
     margin: 10px 0;
     font-weight: 600;
 }
 
 #modal-details p {
     color: #666;
-    font-size: 0.9em; /* Texto más pequeño para el modal */
+    font-size: 1em;
     margin: 10px 0;
     line-height: 1.4;
 }
@@ -158,58 +158,57 @@ header {
 }
 
 #modal-details li {
-    font-size: 0.9em; /* Texto más pequeño para el modal */
+    font-size: 0.9em;
     color: #333;
     padding: 8px 0;
     border-bottom: 1px solid #ddd;
 }
 
-#modal-details .item-price {
-    color: #d32f2f; /* Rojo para los precios */
-    font-weight: 600;
-}
-
-.sub-thumbnails {
+/* Estilos para las secciones separadas del combo */
+.combo-sections {
     display: flex;
-    justify-content: center;
-    gap: 15px; /* Espacio entre las sub-tarjetas */
-    flex-wrap: wrap; /* Permite que se ajusten en pantallas pequeñas */
+    flex-direction: column; /* Apiladas verticalmente para claridad */
+    gap: 20px; /* Espacio entre secciones */
     padding: 10px;
 }
 
-.sub-thumbnail {
-    width: 100px; /* Tamaño más pequeño para las sub-tarjetas */
-    height: auto;
-    background-color: #fff; /* Fondo blanco para cada sub-tarjeta */
+.combo-section {
+    background-color: #fff;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    border: 3px solid #d32f2f;
     text-align: center;
-    padding: 10px;
-    border: 2px solid #d32f2f; /* Borde rojo para mantener el estilo */
     transition: transform 0.3s ease;
 }
 
-.sub-thumbnail:hover {
-    transform: scale(1.05); /* Efecto de aumento al pasar el ratón */
+.combo-section:hover {
+    transform: scale(1.02); /* Efecto sutil al pasar el ratón */
 }
 
-.sub-thumbnail img {
+.combo-section img {
     width: 100%;
-    height: 60px; /* Altura fija para las imágenes de las sub-tarjetas */
+    height: 120px; /* Tamaño más grande para destacar */
     object-fit: cover;
     border-radius: 5px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
-.sub-thumbnail h3 {
-    color: #1976d2; /* Azul para los títulos */
-    font-size: 1em; /* Tamaño de fuente pequeño */
+.combo-section h3 {
+    color: #1976d2;
+    font-size: 1.4em;
+    margin: 10px 0;
+}
+
+.combo-section p {
+    color: #666;
+    font-size: 1em;
     margin: 5px 0;
 }
 
-.sub-thumbnail p {
-    color: #d32f2f; /* Rojo para los precios */
-    font-size: 0.9em;
+.combo-section .price {
+    color: #d32f2f;
+    font-size: 1.2em;
     font-weight: 600;
-    margin: 5px 0;
+    margin-top: 10px;
 }
