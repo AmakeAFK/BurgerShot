@@ -24,6 +24,16 @@ function showDetails(category) {
                 </ul>
             `;
             break;
+        case 'cajitafeliz':
+            content = `
+                <img src="imagenes/burgerShot_chickenStick.png" alt="Pollo Frito">
+                <h2>Pollo Frito</h2>
+                <p>El menú perfecto para las nuevas juventudes</p>
+                <ul>
+                    <li>Pollo Frito - $40</li>
+                </ul>
+            `;
+            break;
         case 'burrito':
             content = `
                 <h2>Burritos - Elige tu favorito</h2>
