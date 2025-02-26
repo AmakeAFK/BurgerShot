@@ -16,11 +16,11 @@ function showDetails(category) {
             break;
         case 'cajitafeliz':
             content = `
-                <img src="imagenes/BurgerShot_MenuKid.png" alt="Cajita Feliz">
+                <img src="imagenes/BurgerShot_MenuKid.png" alt="Caja de la alegria">
                 <h2>Caja de la alegria</h2>
                 <p>El menú perfecto para las nuevas juventudes</p>
                 <ul>
-                    <li>Cajita Feliz - $50</li>
+                    <li>Caja de la alegria - $50</li>
                 </ul>
             `;
             break;
