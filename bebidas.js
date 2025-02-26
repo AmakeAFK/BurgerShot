@@ -15,13 +15,13 @@ function showDetails(category) {
                 </ul>
             `;
             break;
-        case 'jugo':
+        case 'burgercafe':
             content = `
-                <img src="imagenes/jugo.png" alt="Jugo">
-                <h2>Jugo Natural</h2>
-                <p>Hecho con frutas frescas.</p>
+                <img src="imagenes/jugo.png" alt="Café Burger">
+                <h2>Café Burger</h2>
+                <p>Café bien buen.</p>
                 <ul>
-                    <li>Jugo (300ml) - $25</li>
+                    <li>Café (300ml) - $40</li>
                 </ul>
             `;
             break;
