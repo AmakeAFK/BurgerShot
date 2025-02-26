@@ -27,7 +27,7 @@ function showDetails(category) {
             break;
         case 'burrito':
             content = `
-                <img src="imagenes/burgerShot_Buritos.png" alt="Burrito de Pollo">
+                <img src="imagenes/burgerShot_buritos.png" alt="Burrito de Pollo">
                 <h2>Burrito</h2>
                 <p>Por poner.</p>
                 <ul>
