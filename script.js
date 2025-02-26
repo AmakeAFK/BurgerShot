@@ -65,6 +65,16 @@ function showDetails(category) {
                 </ul>
             `;
             break;
+        case 'cheeseburger3':
+            content = `
+                <img src="iimagenes/burgerShot_cheese.png" alt="Hamburguesa triple con queso>
+                <h2>Triple Cheeseburger</h2>
+                <p>Por poner.</p>
+                <ul>
+                    <li>Triple Cheeseburger - $40</li>
+                </ul>
+            `;
+            break;
     }
 
     modalDetails.innerHTML = content;
