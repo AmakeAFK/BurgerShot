@@ -45,36 +45,6 @@ function showDetails(category) {
                 </ul>
             `;
             break;
-        case 'cheeseburger':
-            content = `
-                <img src="imagenes/burgerShot_cheese.png" alt="Hamburguesa con queso>
-                <h2>Cheeseburger Normal</h2>
-                <p>Por poner.</p>
-                <ul>
-                    <li>Cheeseburger Normal - $40</li>
-                </ul>
-            `;
-            break;
-        case 'cheeseburger2':
-            content = `
-                <img src="imagenes/burgerShot_cheese2.png" alt="Hamburguesa doble con queso>
-                <h2>Doble Cheeseburger</h2>
-                <p>Por poner.</p>
-                <ul>
-                    <li>Doble Cheeseburger - $40</li>
-                </ul>
-            `;
-            break;
-        case 'cheeseburger3':
-            content = `
-                <img src="imagenes/burgerShot_cheese3.png" alt="Hamburguesa triple con queso>
-                <h2>Triple Cheeseburger</h2>
-                <p>Por poner.</p>
-                <ul>
-                    <li>Triple Cheeseburger - $40</li>
-                </ul>
-            `;
-            break;
     }
 
     modalDetails.innerHTML = content;
