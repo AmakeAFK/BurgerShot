@@ -35,6 +35,10 @@ body {
     transition: transform 0.3s ease;
 }
 
+.logo:hover {
+    transform: scale(1.05);
+}
+
 .nav-links {
     display: flex;
     gap: 2rem;
@@ -451,5 +455,153 @@ body {
     
     .menu-grid {
         grid-template-columns: 1fr;
+    }
+}
+
+/* FORMULARIO */
+
+/* Banner Section */
+.banner {
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 140px;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+                url('imagenes/bg-hero.jpg') center/cover;
+    color: white;
+}
+
+.banner-title {
+    font-size: 4rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 12rem;
+    text-shadow: 4px 4px 0 var(--primary-red);
+}
+
+.banner-title span {
+    color: var(--gold);
+    position: relative;
+}
+
+/* Contenedor del formulario */
+.form-container {
+    padding: 2rem 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.form-box {
+    background: #fff;
+    border-radius: 20px;
+    padding: 2rem;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    border: 2px solid var(--primary-red);
+    transition: transform 0.3s ease;
+}
+
+.form-box:hover {
+    transform: translateY(-5px);
+}
+
+/* Campos del formulario */
+.form-field {
+    margin-bottom: 1.5rem;
+}
+
+.form-field label {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--dark-bg);
+    margin-bottom: 0.5rem;
+}
+
+.form-field input,
+.form-field textarea {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border: 2px solid var(--dark-bg);
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    background: rgba(255, 245, 240, 0.7);
+    color: var(--dark-bg);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    box-sizing: border-box;
+}
+
+.form-field input:focus,
+.form-field textarea:focus {
+    outline: none;
+    border-color: var(--primary-red);
+    box-shadow: 0 0 8px rgba(255, 61, 46, 0.3);
+    background: #fff;
+}
+
+.form-field textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+/* Botón de envío */
+.form-button {
+    background: linear-gradient(135deg, var(--primary-red), var(--dark-red));
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    width: 100%;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(255, 61, 46, 0.3);
+}
+
+.form-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(255, 61, 46, 0.4);
+}
+
+/* Mensaje de feedback */
+.form-message {
+    text-align: center;
+    color: var(--primary-red);
+    font-size: 1rem;
+    margin-top: 1rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.form-message.show {
+    opacity: 1;
+}
+
+/* Responsividad */
+@media (max-width: 600px) {
+    .banner h1 {
+        font-size: 1.8rem;
+    }
+
+    .form-box {
+        padding: 1.5rem;
+    }
+
+    .form-field label {
+        font-size: 1rem;
+    }
+
+    .form-field input,
+    .form-field textarea {
+        font-size: 0.95rem;
+    }
+
+    .form-button {
+        font-size: 1.1rem;
     }
 }
