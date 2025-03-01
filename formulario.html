@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postulación - Burger Shot</title>
+    <link rel="stylesheet" href="formulario.css">
+    <link rel="stylesheet" href="styles.css"
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo-container">
+                <img src="imagenes/logo_burgershot.png" alt="Burger Shot" class="logo">
+            </div>
+            <div class="nav-links">
+                <a href="combos.html" class="nav-link"><i class="fas fa-burger"></i>Combos</a>
+                <a href="bebidas.html" class="nav-link"><i class="fas fa-cocktail"></i>Bebidas</a>
+                <a href="extras.html" class="nav-link"><i class="fas fa-plus"></i>Extras</a>
+                <a href="index.html" class="nav-link"><i class="fas fa-home"></i>Inicio</a>
+            </div>
+        </nav>
+    </header>
+    <section class="banner">
+        <h1 class="banner-title">Postula al <span>Burger Shot</span></h1>
+    </section>
+    <main class="form-container">
+        <form id="miFormulario" class="form-box">
+            <div class="form-field">
+                <label for="nombre-ic">Nombre IC:</label>
+                <input type="text" id="nombre-ic" name="nombre-ic" required>
+            </div>
+            <div class="form-field">
+                <label for="edad-ic">Edad IC:</label>
+                <input type="number" id="edad-ic" name="edad-ic" required>
+            </div>
+            <div class="form-field">
+                <label for="edad-ooc">Edad OOC:</label>
+                <input type="number" id="edad-ooc" name="edad-ooc" required>
+            </div>
+            <div class="form-field">
+                <label for="discord">Nombre de Discord:</label>
+                <input type="text" id="discord" name="discord" required>
+            </div>
+            <div class="form-field">
+                <label for="steam">Steam:</label>
+                <input type="text" id="steam" name="steam" required>
+            </div>
+            <div class="form-field">
+                <label for="tiempo">Tiempo disponible diario:</label>
+                <input type="text" id="tiempo" name="tiempo" required>
+            </div>
+            <div class="form-field">
+                <label for="experiencia">Experiencia previa:</label>
+                <textarea id="experiencia" name="experiencia" required></textarea>
+            </div>
+            <div class="form-field">
+                <label for="razon-eleccion">¿Por qué deberíamos elegirte?:</label>
+                <textarea id="razon-eleccion" name="razon-eleccion" required></textarea>
+            </div>
+            <div class="form-field">
+                <label for="razon-burgershot">¿Por qué el Burger Shot y no el Salieri's?:</label>
+                <textarea id="razon-burgershot" name="razon-burgershot" required></textarea>
+            </div>
+            <button type="submit" class="form-button">Enviar Postulación</button>
+            <div class="form-message" id="formMessage"></div>
+        </form>
+    </main>
+    <script src="formulario.js"></script>
+</body>
+</html>
