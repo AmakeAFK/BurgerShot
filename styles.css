@@ -29,6 +29,7 @@ body {
     backdrop-filter: blur(10px);
     border-radius: 15px;
     margin: 10px auto;
+    user-select: none;
 }
 
 .logo {
