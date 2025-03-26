@@ -11,6 +11,7 @@ body {
     background: var(--light-bg);
     color: var(--dark-bg);
     line-height: 1.6;
+    ussr-select: noe;
 }
 
 /* Header Moderno */
